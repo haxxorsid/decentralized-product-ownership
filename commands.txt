@@ -1,0 +1,19 @@
+blockchain createblockchain -name Org1 -publickey a90ecbbfcb12895cc223c0084c26904aaf8a2b505d297a016bef76f28e7dbfd549dfffa5c0247c6811e913c2c578599a0931845fde234c53e5737da53be514d2 -gstin da123 -prefix 01123
+
+blockchain createorg -address 1ENQHavsRJ6aqiKGijojT7JtpqsLEBiSM8 -name Org2 -publickey 8200e9b137ad5148f0589325e610b248c0b703b7deda8317872edac0a007212d9d4823794c2b82412d78ffa1a1563b947cd2fa04bebe0c5fada335eaed47ae14 -gstin g0023 -prefix 123001 -role Manufacturer
+
+blockchain createorg -address 1ENQHavsRJ6aqiKGijojT7JtpqsLEBiSM8 -name Org2 -publickey 9bce09f963663d46a3626f24dcf99c82d6cd04de05daa842cdbcdda9484eed36797d446723478517129e8f4c2f4c342a4ac2ee7e92ce298c0a96f7146868c08a -gstin ggg23 -prefix 41232 -role Manufacturer
+
+blockchain listorg
+
+blockchain addproducts -address 12m8LdcAQNfBoD6z51FAm37qKV41ULFiUt -names maggie,colgate
+
+blockchain listproducts -address 12m8LdcAQNfBoD6z51FAm37qKV41ULFiUt
+
+blockchain addproducts -address 18QoKReY5zNB1B7Fu9fWkeuCjX9kaDHzK1 -names dermicool,tide
+
+blockchain listproducts -address 18QoKReY5zNB1B7Fu9fWkeuCjX9kaDHzK1
+
+blockchain produceproducts -address 12m8LdcAQNfBoD6z51FAm37qKV41ULFiUt -codes 1,2
+
+blockchain printchain
